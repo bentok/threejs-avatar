@@ -3,15 +3,15 @@ var THREEx	= THREEx || {};
 /**
  * from original webgl anonymous demo 
  */
-THREEx.NyanCatSound	= function(){
+THREEx.BentokAvatarSound	= function(){
 	var songPaused	= document.createElement('audio');
-	var soundUrl	= THREEx.NyanCatSound.baseUrl+'sounds/nyanslow.mp3'
+	var soundUrl	= THREEx.BentokAvatarSound.baseUrl+'sounds/bentokslow.mp3'
 	this.songPaused	= songPaused
 	songPaused.setAttribute('src', soundUrl);
 	songPaused.setAttribute('loop', 'true');
 
 	var songRunning	= document.createElement('audio')
-	var soundUrl	= THREEx.NyanCatSound.baseUrl+'sounds/nyanlooped.mp3'
+	var soundUrl	= THREEx.BentokAvatarSound.baseUrl+'sounds/bentoklooped.mp3'
 	this.songRunning= songRunning
 	songRunning.setAttribute('src', soundUrl);
 	songRunning.setAttribute('loop', 'true');
@@ -30,4 +30,4 @@ THREEx.NyanCatSound	= function(){
 	}.bind(this);
 }
 
-THREEx.NyanCatSound.baseUrl	= '../'
+THREEx.BentokAvatarSound.baseUrl	= '../'

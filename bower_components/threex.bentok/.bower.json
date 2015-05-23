@@ -1,0 +1,14 @@
+{
+  "name": "threex.bentok",
+  "homepage": "https://github.com/jeromeetienne/threex.bentok",
+  "_release": "d118bfa30e",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "d118bfa30e2d1108614149e32414abb48bd005b2"
+  },
+  "_source": "git://github.com/jeromeetienne/threex.bentok.git",
+  "_target": "*",
+  "_originalSource": "threex.bentok",
+  "_direct": true
+}

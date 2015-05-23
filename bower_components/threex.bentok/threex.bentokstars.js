@@ -3,7 +3,7 @@ var THREEx	= THREEx || {};
 /**
  * from original webgl anonymous demo 
  */
-THREEx.NyanCatStars	= function(){
+THREEx.BentokAvatarStars	= function(){
 	var container	= new THREE.Object3D()
 	this.container	= container
 	var numStars	= 10
@@ -78,7 +78,7 @@ THREEx.NyanCatStars	= function(){
 }
 
 
-THREEx.NyanCatStars.prototype.update = function(delta, now){
+THREEx.BentokAvatarStars.prototype.update = function(delta, now){
 	var numStars	= this.numStars
 	// compute the frameIdx for present time
 	var nFrames	= 6

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <script src='vendor/three.js/build/three.min.js'></script>
-<script src='../threex.nyancat.js'></script>
-<script src='../threex.nyancatsound.js'></script>
-<script src='../threex.nyancatstars.js'></script>
-<script src='../threex.nyancatrainbow.js'></script>
+<script src='../threex.bentok.js'></script>
+<script src='../threex.bentoksound.js'></script>
+<script src='../threex.bentokstars.js'></script>
+<script src='../threex.bentokrainbow.js'></script>
 <body style='margin: 0px; background-color: #003366; overflow: hidden;'><script>
 	var renderer	= new THREE.WebGLRenderer();
 	renderer.setSize( window.innerWidth, window.innerHeight );
@@ -27,31 +27,31 @@
 
 	var paused	= false;
 	
-	var nyanCat	= new THREEx.NyanCat()
-	scene.add( nyanCat.container )
+	var bentokAvatar	= new THREEx.BentokAvatar()
+	scene.add( bentokAvatar.container )
 	updateFcts.push(function(delta, now){
 		if( paused )	return
-		nyanCat.update(delta, now)
+		bentokAvatar.update(delta, now)
 	})
 
-	var sound	= new THREEx.NyanCatSound()
+	var sound	= new THREEx.BentokAvatarSound()
 	document.body.addEventListener('mousedown', function(){
 		paused	= paused ? false : true
 		sound.toggle()
 	})
 	
-	var nyanStars	= new THREEx.NyanCatStars()
-	scene.add( nyanStars.container )
+	var bentokStars	= new THREEx.BentokAvatarStars()
+	scene.add( bentokStars.container )
 	updateFcts.push(function(delta, now){
 		if( paused )	return 
-		nyanStars.update(delta, now)
+		bentokStars.update(delta, now)
 	})
 
-	var nyanRainbow	= new THREEx.NyanCatRainbow()
-	scene.add( nyanRainbow.container )
+	var bentokRainbow	= new THREEx.BentokAvatarRainbow()
+	scene.add( bentokRainbow.container )
 	updateFcts.push(function(delta, now){
 		if( paused )	return
-		nyanRainbow.update(delta, now)
+		bentokRainbow.update(delta, now)
 	})
 
 	//////////////////////////////////////////////////////////////////////////////////

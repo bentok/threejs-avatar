@@ -3,7 +3,7 @@ var THREEx	= THREEx || {};
 /**
  * from original webgl anonymous demo 
  */
-THREEx.NyanCatRainbow	= function(){
+THREEx.BentokAvatarRainbow	= function(){
 	var container	= new THREE.Object3D()
 	this.container	= container
 
@@ -49,7 +49,7 @@ THREEx.NyanCatRainbow	= function(){
 }
 
 
-THREEx.NyanCatRainbow.prototype.update = function(delta, now){
+THREEx.BentokAvatarRainbow.prototype.update = function(delta, now){
 	var past	= now - delta;
 	// compute the frameIdx for present time
 	var nFrames	= 12
